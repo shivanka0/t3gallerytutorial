@@ -5,3 +5,7 @@
 body { 
     @apply bg-black text-white;
 }
+
+:root {
+    --font-sans: 'Inter', semi-bold;
+}
