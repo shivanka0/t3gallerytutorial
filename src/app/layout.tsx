@@ -6,7 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { TopNav } from "./_components/topnav";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
-import { ourFileRouter } from "./api/uploadthing/core";
+import { ourFileRouter } from "~/app/api/uploadthing/core";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans",});
 
