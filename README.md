@@ -6,10 +6,10 @@ README.md
 - [x] make it deploy
 - [x] scaffold with basic ui and mock data
 - [x] tiddy up build process
-- [ ] actually setup a db
-- [ ] attach db to ui
-- [ ] add auth(clerk)
-- [ ] add upload
+- [x] actually setup a db
+- [x] attach db to ui
+- [x] add auth(clerk)
+- [x] add upload
 - [ ] add delete button (with server actions)
 - [ ] error management (sentry)
 - [ ] routing/image page (parallel route)
