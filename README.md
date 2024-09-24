@@ -11,7 +11,8 @@ README.md
 - [x] add auth(clerk)
 - [x] add upload
 - [x] add uploadthing
-- [ ] 'taint' (server only)
+- [x] 'taint' (server only)
+- [x] use next/image component
 - [ ] add delete button (with server actions)
 - [ ] error management (sentry)
 - [ ] routing/image page (parallel route)

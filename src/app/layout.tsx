@@ -8,6 +8,7 @@ import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
 import { ourFileRouter } from "~/app/api/uploadthing/core";
 
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans",});
 
 export const metadata: Metadata = {
@@ -24,7 +25,6 @@ export default function RootLayout({
   return (
     <ClerkProvider>
     <html lang="en">
-      <div className="flex justify-center">
         <NextSSRPlugin
           /**
            * The `extractRouterConfig` will extract **only** the route configs
@@ -34,7 +34,6 @@ export default function RootLayout({
            */
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
-      </div>
       <body className={`font-sans ${inter.variable} flex flex-col gap-4`}>
         <TopNav />
         {children}
