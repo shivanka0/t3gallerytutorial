@@ -10,6 +10,8 @@ README.md
 - [x] attach db to ui
 - [x] add auth(clerk)
 - [x] add upload
+- [x] add uploadthing
+- [ ] 'taint' (server only)
 - [ ] add delete button (with server actions)
 - [ ] error management (sentry)
 - [ ] routing/image page (parallel route)

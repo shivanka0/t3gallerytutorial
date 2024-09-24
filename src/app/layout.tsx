@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
     <html lang="en">
+      <div className="flex justify-center">
         <NextSSRPlugin
           /**
            * The `extractRouterConfig` will extract **only** the route configs
@@ -33,6 +34,7 @@ export default function RootLayout({
            */
           routerConfig={extractRouterConfig(ourFileRouter)}
         />
+      </div>
       <body className={`font-sans ${inter.variable} flex flex-col gap-4`}>
         <TopNav />
         {children}
