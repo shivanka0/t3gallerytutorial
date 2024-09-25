@@ -13,9 +13,9 @@ README.md
 - [x] add uploadthing
 - [x] 'taint' (server only)
 - [x] use next/image component
-- [ ] add delete button (with server actions)
-- [ ] error management (sentry)
+- [x] error management (sentry)
 - [ ] routing/image page (parallel route)
 - [ ] make it pretty
 - [ ] rate limiting(upstash)
 - [ ] analytics(posthog)
+- [ ] add delete button (with server actions)
