@@ -16,7 +16,9 @@ import {
  *
  * @see https://orm.drizzle.team/docs/goodies#multi-project-schema
  */
-export const createTable = pgTableCreator((name) => `t3gallerytutorial_${name}`);
+export const createTable = pgTableCreator(
+  (name) => `t3gallerytutorial_${name}`,
+);
 
 export const images = createTable(
   "image",
@@ -29,10 +31,10 @@ export const images = createTable(
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).$onUpdate(
-      () => new Date()
+      () => new Date(),
     ),
   },
   (example) => ({
     nameIndex: index("name_idx").on(example.name),
-  })
+  }),
 );
